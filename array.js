@@ -61,3 +61,34 @@ console.log(array3.every(element => element >= 18));
 /// SI hay un menor de edad
 console.log(array3.every(element => element < 18));
 
+console.log("-------------------------------")
+
+//El método some() comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada.
+
+console.log([2, 5, 8, 1, 4].some(elem => elem > 10))  // false
+console.log([12, 5, 8, 1, 4].some(elem => elem > 10)); // true
+console.log("-------------------------------")
+
+const array4 = [2,4,6,8,10];
+
+let nuevo = array4.map(element => element*2);
+console.log(nuevo)
+var a = 24;
+let b = a.toString();
+console.log(b.length)
+
+
+
+
+let num = [1,6,26,12,8];
+
+
+console.log(num.every((element)=> element == num[0]))
+let arr = [];
+for (let index = 0; index <= 60; index++) {
+   let mult = 6 * index;
+   arr.push(mult);
+}
+console.log(arr)
+let verdad= num.some(element=> element===1 || element===2);
+console.log(verdad)
